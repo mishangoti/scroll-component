@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ScrollComponent</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+  </head>
+<body>
+  <app-root></app-root>
+</body>
+<script>
+  // START: SCROLL LOGO 
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   let controller = new ScrollMagic.Controller();
+
+  //   let timeline = new TimelineMax();
+  //   timeline
+  //   .from('.image_part_001', 4, {
+  //       y: -40,
+  //       x: -40,
+  //       rotation: 10,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   })
+  //   .from('.section_1_01', 4, {
+  //       y: -40,
+  //       x: -40,
+  //       rotation: 10,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_002', 4, {
+  //       y: -40,
+  //       x: -20,
+  //       rotation: -15,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_02', 4, {
+  //       y: -40,
+  //       x: -20,
+  //       rotation: -15,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_003', 4, {
+  //       y: -40,
+  //       x: 20,
+  //       rotation: 20,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_03', 4, {
+  //       y: -40,
+  //       x: 20,
+  //       rotation: 20,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_004', 4, {
+  //       y: -40,
+  //       x: 20,
+  //       rotation: -15,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_04', 4, {
+  //       y: -40,
+  //       x: 20,
+  //       rotation: -15,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_005', 4, {
+  //       y: 40,
+  //       x: -40,
+  //       rotation: -15,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_05', 4, {
+  //       y: 40,
+  //       x: -40,
+  //       rotation: -15,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_006', 4, {
+  //       y: 40,
+  //       x: -20,
+  //       rotation: 10,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_06', 4, {
+  //       y: 40,
+  //       x: -20,
+  //       rotation: 10,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_007', 4, {
+  //       y: 40,
+  //       x: 20,
+  //       rotation: -15,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_07', 4, {
+  //       y: 40,
+  //       x: 20,
+  //       rotation: -15,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.image_part_008', 4, {
+  //       y: 40,
+  //       x: 40,
+  //       rotation: 10,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_08', 4, {
+  //       y: 40,
+  //       x: 40,
+  //       rotation: 10,
+  //       ease: Power3.easeInOut
+  //   }, '-=4')
+  //   .from('.section_1_bg', 4, {
+  //       y: 0,
+  //       x: 0,
+  //       opacity: 0,
+  //       ease: Power3.easeInOut
+  //   })
+
+  //   let scene = new ScrollMagic.Scene({
+  //       triggerElement: '.first-section',
+  //       duration: '200%',
+  //       triggerHook: 0,
+  //       offset: '300'
+  //   })
+  //   .setTween(timeline)
+  //   .setPin('.first-section')
+  //   .addTo(controller);
+  // })
+  // END: SCROLL LOGO
+  
+  // START: SCROLL STUDENTWELLBEING LOGO 
+//   document.addEventListener('DOMContentLoaded', () => {
+//     let studentwellbeingController = new ScrollMagic.Controller();
+
+//     let studentwellbeingTimeline = new TimelineMax();
+//     studentwellbeingTimeline
+//     .from('.studentwellbeing-blue-images .image_part_001', 4, {
+//         y: -40,
+//         x: -40,
+//         rotation: 10,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     })
+//     .from('.studentwellbeing-ingredient-images .section_1_01', 4, {
+//         y: -40,
+//         x: -40,
+//         rotation: 10,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_002', 4, {
+//         y: -40,
+//         x: -20,
+//         rotation: -15,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_02', 4, {
+//         y: -40,
+//         x: -20,
+//         rotation: -15,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_003', 4, {
+//         y: -40,
+//         x: 20,
+//         rotation: 20,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_03', 4, {
+//         y: -40,
+//         x: 20,
+//         rotation: 20,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_004', 4, {
+//         y: -40,
+//         x: 20,
+//         rotation: -15,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_04', 4, {
+//         y: -40,
+//         x: 20,
+//         rotation: -15,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_005', 4, {
+//         y: 40,
+//         x: -40,
+//         rotation: -15,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_05', 4, {
+//         y: 40,
+//         x: -40,
+//         rotation: -15,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_006', 4, {
+//         y: 40,
+//         x: -20,
+//         rotation: 10,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_06', 4, {
+//         y: 40,
+//         x: -20,
+//         rotation: 10,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_007', 4, {
+//         y: 40,
+//         x: 20,
+//         rotation: -15,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_07', 4, {
+//         y: 40,
+//         x: 20,
+//         rotation: -15,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .image_part_008', 4, {
+//         y: 40,
+//         x: 40,
+//         rotation: 10,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-ingredient-images .section_1_08', 4, {
+//         y: 40,
+//         x: 40,
+//         rotation: 10,
+//         ease: Power3.easeInOut
+//     }, '-=4')
+//     .from('.studentwellbeing-blue-images .section_1_bg', 4, {
+//         y: 0,
+//         x: 0,
+//         opacity: 0,
+//         ease: Power3.easeInOut
+//     })
+
+//     let scene = new ScrollMagic.Scene({
+//         triggerElement: '.studentwellbeing-section',
+//         duration: '200%',
+//         triggerHook: 0,
+//         offset: '300'
+//     })
+//     .setTween(studentwellbeingTimeline)
+//     .setPin('.studentwellbeing-section')
+//     .addTo(studentwellbeingController);
+//   })
+  // END: SCROLL STUDENTWELLBEING LOGO 
+  
+  // START: SCROLL STAFFWELLBEING LOGO
+
+  // END: SCROLL STAFFWELLBEING LOGO 
+  
+
+</script>
+</html>
